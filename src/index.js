@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         .then(data => {
             const allBreeds = Object.keys(data.message)
-            let filteredBreeds = dog;
+            let filteredBreeds = allBreeds;
 
             if (selectedLetter !== "all") {
                 filteredBreeds = allBreeds.filter(breeds => breeds.startsWith(selectedLetter));
